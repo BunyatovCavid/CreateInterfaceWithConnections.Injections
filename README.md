@@ -9,7 +9,7 @@ then go to the folder where you want to copy this project and start git bash and
 ![Ekran22](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/9db25c7d-20c9-43aa-a0c8-b3ce1d9403b5)
 
 2)Go to Project -> Manage NuGet Packages and search for the dll name.
-![Ekran4](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/afe579cd-1c1e-4e66-93a6-5e4077582b94)
+![Ekran23](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/f8494961-00c2-48ed-a4d3-76df6a10f9dc)
 
 
 
@@ -44,7 +44,8 @@ Write the information according to the instructions on the console that appears 
 
 
 ## Responses
-![Ekran16](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/5e189724-5501-401c-9617-d12d733f2090)
 ![Ekran17](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/dd52fa48-00c6-467d-b496-1015e74350f7)
 ![Ekran18](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/d068465a-3227-4aa0-80c1-bd47148fde77)
 ![Ekran19](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/ad7fb8c8-e374-4984-a4b3-5221599c1293)
+![Ekran20](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/6b32dfc2-7d59-4830-9b8a-4a4cc8a83343)
+![Ekran16](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/5e189724-5501-401c-9617-d12d733f2090)
