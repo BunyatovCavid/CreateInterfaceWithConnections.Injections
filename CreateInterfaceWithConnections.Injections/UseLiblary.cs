@@ -88,13 +88,24 @@ namespace CreateInterfaceWithConnections.Injections
                 check_s = CreateService.AddService(name, folder, empty, mynamespace, request);
                 Console.WriteLine();
             }
+            else
+            {
+                Console.WriteLine(MyExceptions.CreatedIsFailed(name, "Service", $"I{name}"));
+                Console.WriteLine();
+            }
             if (check_i && check_s)
             {
                 check_c = CreateController.AddController(name, folder, empty, mynamespace, request);
                 Console.WriteLine();
             }
-            if (check_i && check_s && check_c)
-                Injection.PutProgram(name, mynamespace, empty);
+            else
+            {
+                Console.WriteLine(check_i? MyExceptions.CreatedIsFailed(name, "Controller", $"{name}Service") : MyExceptions.CreatedIsFailed(name, "Controller", $"I{name}"));
+            }
+            if (check_i && check_s)
+                Console.WriteLine(Injection.PutProgram(name, mynamespace, empty));
+            else
+                Console.WriteLine(check_i ? MyExceptions.InjectionFailed(name, $"{name}Service") : MyExceptions.InjectionFailed(name, $"I{name}"));
 
         }
 

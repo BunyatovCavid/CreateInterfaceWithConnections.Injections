@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>CreateInterfaceWithControllers.Injections</id>
-    <version>1.0.1</version>
-    <title>CreateInterfaceWithControllers.Injections</title>
-    <authors>Cavid Bunyatov</authors>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
-    <projectUrl>https://github.com/BunyatovCavid/CreateInterfaceWithInjections-DLL-</projectUrl>
-    <description>this library is to avoid wasting time with interface, service and controller connections and to write faster, less tedious code. Good luck C# dude.</description>
-    <releaseNotes></releaseNotes>
-    <copyright>copyright 2023</copyright>
-    <tags>Create Interface Controller Service Injection Connection</tags>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <description>$description$</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Tag1 Tag2</tags>
   </metadata>
 </package>

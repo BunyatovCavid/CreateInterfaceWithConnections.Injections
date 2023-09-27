@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CreateInterfaceWithConnections.Injections
 {
-    internal static class LiblaryExtensionMethod
+    public static class LiblaryExtensionMethod
     {
         private static string ExtensionBaseMethod()
         {
@@ -157,7 +157,7 @@ namespace CreateInterfaceWithConnections.Injections
 
         }
 
-        public static void AddController(this IApplicationBuilder app)
+        public static void UseUML(this IApplicationBuilder app)
         {
             string name = "UML";
             string folder = ExtensionBaseMethod();
@@ -236,6 +236,7 @@ namespace CreateInterfaceWithConnections.Injections
                 File.AppendAllLines(path, empty);
                 File.AppendAllText(path, "}");
                 File.AppendAllLines(path, empty);
+              
             }
         }
 

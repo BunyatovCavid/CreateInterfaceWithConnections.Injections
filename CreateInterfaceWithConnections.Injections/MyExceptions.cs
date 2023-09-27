@@ -28,5 +28,15 @@ namespace CreateInterfaceWithConnections.Injections
             string exception = $"Successful I{file} and {file}Service injection";
             return exception;
         }
+        public static string InjectionFailed(string file, string failedfile)
+        {
+            string exception = $"Failed I{file} and {file}Service injection because creation of {failedfile} failed.";
+            return exception;
+        }
+        public static string CreatedIsFailed(string file, string filetype, string failedfile)
+        {
+            string exception = $"Unable create {filetype} name {file} because creation of {failedfile} failed.";
+            return exception;
+        }
     }
 }
