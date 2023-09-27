@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <id>CreateInterfaceWithControllers.Injections</id>
+    <version>1.0.3</version>
+    <title>CreateInterfaceWithControllers.Injections</title>
+    <authors>Cavid Bunyatov</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <!-- <icon>icon.png</icon> -->
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>$copyright$</copyright>
-    <tags>Tag1 Tag2</tags>
+    <icon>icons8-connection-128.png</icon> 
+    <projectUrl>https://github.com/BunyatovCavid/CreateInterfaceWithConnections.Injections/tree/master</projectUrl>
+    <description>this library is to avoid wasting time with interface, service and controller connections and to write faster and less tedious code.
+
+Enable the UseUML() extension method by writing "app.UseUML()" in Program.cs, then build the application, send a request to "UMLController" with the Get protocol, and then enter the information into the console as shown below.
+
+Before reading the instructions, I would like to say that this library accepts and writes every line you write, so when sending data, follow the rules of writing an interface.
+
+Enter the interface methods/properties line by line without using \";\" and start the method name with \"Get/Post/Put/Patch/Delete\" if you want the http protocol to be added to your methods in the controller. . When finished, type \"Yes\" in the console and press Enter."
+
+Good luck C# dude.
+</description>
+    <releaseNotes></releaseNotes>
+    <copyright>copyright 2023</copyright>
+    <tags>Craete Interface Injection Controller Connection Service Dependency Library</tags>
   </metadata>
+
+    <files>
+        <file src="icons8-connection-128.png" target="" />
+    </files>
 </package>
