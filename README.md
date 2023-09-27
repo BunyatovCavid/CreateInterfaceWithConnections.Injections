@@ -24,7 +24,7 @@ Right-click Dependency and click add project reference, then select the dll from
 
 ## Active
 
-Go to Program.cs and then add the UseUML method to the application by writing app.UseUML() and run the application
+Go to Program.cs and then add the UseUML method to the application by writing app.UseUML() and run the application. Run the program once to create a UML controller. Since the UML controller is created at runtime, you can't use it in this case
 
 ![Ekran9](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/6b4770d8-42dd-48c7-ac47-b998218d167e)
 ![Ekran10](https://github.com/BunyatovCavid/MyGalleryForReadMe/assets/115308530/a255a3c8-a042-4dda-94a1-4fe17e11e067)
