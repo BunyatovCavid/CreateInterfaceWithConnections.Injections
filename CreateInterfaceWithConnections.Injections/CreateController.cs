@@ -9,7 +9,7 @@ namespace CreateInterfaceWithConnections.Injections
 {
     internal static class CreateController
     {
-        public static bool AddController(string name, string folder, List<string> empty, string mynamespace, List<string> values)
+        public static bool AddController(string name, string folder, List<string> empty, string mynamespace, List<Datas> values)
         {
             string controllername = name + "Controller";
             bool response = false;
@@ -64,16 +64,6 @@ namespace CreateInterfaceWithConnections.Injections
             File.AppendAllLines(path, empty);
             File.AppendAllText(path, $@"        private readonly I{name} _{name.ToLower()};");
             File.AppendAllLines(path, empty);
-            File.AppendAllLines(path, empty);
-
-            foreach (var item in values)
-            {
-                if (!item.Contains("("))
-                {
-                    File.AppendAllText(path, $@"        {item}");
-                    File.AppendAllLines(path, empty);
-                }
-            }
 
             File.AppendAllLines(path, empty);
             File.AppendAllText(path, $@"        public {controllername}(I{name} {name.ToLower()})");
@@ -87,44 +77,9 @@ namespace CreateInterfaceWithConnections.Injections
 
             foreach (var item in values)
             {
-                if (item.Contains("("))
-                {
-                    if (item.Contains("Get"))
-                    {
-                        File.AppendAllLines(path, empty);
-                        File.AppendAllText(path, @"        [HttpGet]");
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                    else if (item.Contains("Post"))
-                    {
-                        File.AppendAllLines(path, empty);
-                        File.AppendAllText(path, @"        [HttpPost]");
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                    else if (item.Contains("Put"))
-                    {
-                        File.AppendAllLines(path, empty);
-                        File.AppendAllText(path, @"        [HttpPut]");
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                    else if (item.Contains("Patch"))
-                    {
-                        File.AppendAllLines(path, empty);
-                        File.AppendAllText(path, @"        [HttpPatch]");
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                    else if (item.Contains("Delete"))
-                    {
-                        File.AppendAllLines(path, empty);
-                        File.AppendAllText(path, @"        [HttpDelete]");
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                    else
-                    {
-                        File.AppendAllLines(path, empty);
-                        BaseMethods.AutoFill(path, empty, item);
-                    }
-                }
+                File.AppendAllLines(path, empty);
+                File.AppendAllText(path, $@"        {item.Protocole}");
+                BaseMethods.AutoFill(path, empty, item.Signature);
             }
 
 

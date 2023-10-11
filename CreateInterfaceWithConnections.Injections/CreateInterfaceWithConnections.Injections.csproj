@@ -71,6 +71,7 @@
     <Compile Include="CreateController.cs" />
     <Compile Include="CreateInterface.cs" />
     <Compile Include="CreateService.cs" />
+    <Compile Include="Datas.cs" />
     <Compile Include="Injection.cs" />
     <Compile Include="LiblaryExtensionMethod.cs" />
     <Compile Include="MyExceptions.cs" />

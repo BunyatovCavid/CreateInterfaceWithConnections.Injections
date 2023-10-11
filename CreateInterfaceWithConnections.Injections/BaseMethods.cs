@@ -131,7 +131,7 @@ namespace CreateInterfaceWithConnections.Injections
         public static string GetNamespace(string folder)
         {
             var datas = folder.Split('\\');
-            int index = datas.Length - 1;
+            int index = datas.Length - 2;
             string request = datas[index];
             if (request.Contains('.'))
             {

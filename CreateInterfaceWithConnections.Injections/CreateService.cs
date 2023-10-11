@@ -54,7 +54,6 @@ namespace CreateInterfaceWithConnections.Injections
             File.AppendAllLines(path, empty);
             File.AppendAllText(path, "    {");
             File.AppendAllLines(path, empty);
-            File.AppendAllLines(path, empty);
             foreach (var item in values)
             {
                 if (item.Contains("("))

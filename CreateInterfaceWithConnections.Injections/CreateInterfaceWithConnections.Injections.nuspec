@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CreateInterfaceWithControllers.Injections</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>CreateInterfaceWithControllers.Injections</title>
     <authors>Cavid Bunyatov</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/BunyatovCavid/CreateInterfaceWithConnections.Injections/tree/master</projectUrl>
     <description>this library is to avoid wasting time with interface, service and controller connections and to write faster and less tedious code.
 
-Enable the UseUML() extension method by writing "app.UseUML()" in Program.cs, then build the application, send a request to "UMLController" with the Get protocol, and then enter the information into the console as shown below.
+Enable the UseUML() extension method by writing "app.UseUML()" in Program.cs, run the program once to create a UML controller. Since the UML controller is created at runtime, you can't use it in this case, then restart the program and send a request to "UMLController" with the Get protocol, and then enter the data into the console as shown below.
 
 Before reading the instructions, I would like to say that this library accepts and writes every line you write, so when sending data, follow the rules of writing an interface.
 

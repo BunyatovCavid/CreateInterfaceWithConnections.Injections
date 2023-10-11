@@ -17,14 +17,22 @@ namespace CreateInterfaceWithConnections.Injections
             string program = File.ReadAllText(file);
 
             var array_program = program.Split(';');
-          
+
             int builder_index = 0;
+            int array_index = 0;
 
             foreach (var item in array_program)
             {
+                if (item.Contains("using"))
+                    array_index = Array.IndexOf(array_program, item);
                 if (item.Contains("var app"))
                     builder_index = Array.IndexOf(array_program, item) - 1;
             }
+
+            if (!array_program.Contains(mynamespace))
+                array_program[array_index] += $@";
+using {mynamespace}";
+
 
             array_program[builder_index] += $@";
 builder.Services.AddScoped<I{name},{name}Service>()";
